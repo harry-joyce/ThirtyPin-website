@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThirtyPin &mdash; The modern way to manage your iPod</title>
+  <meta name="description" content="ThirtyPin is a native macOS app for syncing music libraries to classic iPods. No iTunes required. Supports every iPod ever made.">
+  <meta property="og:title" content="ThirtyPin &mdash; The modern way to manage your iPod">
+  <meta property="og:description" content="Sync your music library to classic iPods, directly from macOS. No iTunes, no subscriptions.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Thirty<span class="logo-pin">Pin</span></a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#compatibility">Compatibility</a></li>
+      <li><a href="changelog.html">Changelog</a></li>
+      <li><a href="docs.html">Docs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="#download" class="btn btn-primary nav-cta">Download</a>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav drawer -->
+<div class="mobile-nav" role="navigation">
+  <a href="#features">Features</a>
+  <a href="#how-it-works">How It Works</a>
+  <a href="#compatibility">Compatibility</a>
+  <a href="changelog.html">Changelog</a>
+  <a href="docs.html">Docs</a>
+  <a href="contact.html">Contact</a>
+  <a href="#download" class="btn btn-primary" style="margin-top:8px;justify-content:center;">Download</a>
+</div>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+
+      <div class="hero-text">
+        <div class="hero-label">
+          <span class="hero-label-dot"></span>
+          Available for macOS &middot; In Development
+        </div>
+        <h1 class="hero-title">
+          The modern way<br>
+          to manage<br>
+          <em>your iPod.</em>
+        </h1>
+        <p class="hero-desc">
+          ThirtyPin syncs your music library to classic iPods&nbsp;&mdash; directly from macOS,
+          without iTunes, without subscriptions, without compromise.
+        </p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary">Get Notified</a>
+          <a href="#features" class="btn btn-ghost">Explore features &rarr;</a>
+        </div>
+        <p class="hero-note">Requires macOS 13 Ventura or later &middot; Named after the connector that defined an era</p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="ipod-glow"></div>
+        <div class="ipod-wrap">
+          <div class="ipod" aria-hidden="true">
+
+            <!-- Screen -->
+            <div class="ipod-screen">
+              <div class="now-playing">
+                <div class="np-header">
+                  <span>&#9679;&#9679;&#9679;</span>
+                  <span class="np-header-title">Now Playing</span>
+                  <span>&#9646;&#9646;</span>
+                </div>
+                <div class="np-art">
+                  <span class="np-art-note">&#9835;</span>
+                </div>
+                <div class="np-track">1000 Songs in Your Pocket</div>
+                <div class="np-artist">ThirtyPin &mdash; 2024</div>
+                <div class="np-progress-track">
+                  <div class="np-progress-fill"></div>
+                </div>
+                <div class="np-times">
+                  <span>1:23</span>
+                  <span>-2:47</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Click wheel -->
+            <div class="ipod-controls">
+              <div class="ipod-wheel">
+                <span class="wheel-label top">MENU</span>
+                <span class="wheel-label right">&#9654;&#9654;</span>
+                <span class="wheel-label bottom">&#9654;&#10074;&#10074;</span>
+                <span class="wheel-label left">&#10074;&#10074;&#9664;</span>
+                <div class="wheel-center"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM BAND ===== -->
+  <section class="problem-band">
+    <div class="container">
+      <blockquote class="problem-quote">
+        &ldquo;iTunes no longer syncs classic iPods. Music.app won&rsquo;t touch them.
+        Your collection deserves better.&rdquo;<br><br>
+        <em>ThirtyPin does.</em>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section id="features" class="features">
+    <div class="container">
+      <p class="eyebrow fade-up">Features</p>
+      <h2 class="section-title fade-up">Everything you need.<br>Nothing you don&rsquo;t.</h2>
+      <p class="section-subtitle fade-up">
+        ThirtyPin is purpose-built for one job: getting your music onto your iPod,
+        reliably, safely, and without the baggage of legacy software.
+      </p>
+
+      <div class="feature-grid">
+
+        <div class="feature-card fade-up">
+          <div class="feature-icon">&#127925;</div>
+          <h3>No iTunes Required</h3>
+          <p>Point ThirtyPin at any folder of music files. No library imports, no database migrations, no Apple ID. Just your music, your way.</p>
+        </div>
+
+        <div class="feature-card fade-up">
+          <div class="feature-icon">&#128065;</div>
+          <h3>Preview Before You Sync</h3>
+          <p>ThirtyPin builds a complete sync plan &mdash; every add, update, and removal &mdash; before a single file moves. Review it, then commit.</p>
+        </div>
+
+        <div class="feature-card fade-up">
+          <div class="feature-icon">&#128260;</div>
+          <h3>Automatic Transcoding</h3>
+          <p>Formats your iPod can&rsquo;t play are automatically converted via FFmpeg. Configure the target format and bitrate to balance quality and space.</p>
+        </div>
+
+        <div class="feature-card fade-up">
+          <div class="feature-icon">&#128274;</div>
+          <h3>Safe by Default</h3>
+          <p>In Safe mode, ThirtyPin only removes tracks it previously added. Tracks synced by iTunes or Music.app are never touched unless you say so.</p>
+        </div>
+
+        <div class="feature-card fade-up">
+          <div class="feature-icon">&#127760;</div>
+          <h3>Every iPod Generation</h3>
+          <p>From the original 2001 iPod to the iPod Classic 7th gen, every Nano, every Shuffle &mdash; ThirtyPin knows them all, including their capabilities.</p>
+        </div>
+
+        <div class="feature-card fade-up">
+          <div class="feature-icon">&#127912;</div>
+          <h3>Artwork Support</h3>
+          <p>Album art is synced to every compatible device. ThirtyPin reads embedded artwork and folder-level images, and respects each model&rsquo;s limits.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <p class="eyebrow fade-up">How It Works</p>
+      <h2 class="section-title fade-up">Three steps to your first sync.</h2>
+      <p class="section-subtitle fade-up">
+        ThirtyPin is designed to get out of your way. No accounts, no cloud, no waiting.
+      </p>
+
+      <div class="steps">
+
+        <div class="step fade-up">
+          <div class="step-number">1</div>
+          <h3>Choose your music folder</h3>
+          <p>
+            Point ThirtyPin at the folder that holds your music files. It scans the tree,
+            reads metadata, and builds your library &mdash; artists, albums, artwork and all.
+          </p>
+        </div>
+
+        <div class="step fade-up">
+          <div class="step-number">2</div>
+          <h3>Connect your iPod</h3>
+          <p>
+            Plug in your iPod with a USB cable. ThirtyPin detects it automatically,
+            identifies the model, and reads what&rsquo;s already on it.
+          </p>
+        </div>
+
+        <div class="step fade-up">
+          <div class="step-number">3</div>
+          <h3>Review the plan &amp; sync</h3>
+          <p>
+            Select your iPod from the sidebar, choose which artists or albums to sync,
+            review the plan, and hit Sync. ThirtyPin handles the rest.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPATIBILITY ===== -->
+  <section id="compatibility" class="compatibility">
+    <div class="container">
+      <p class="eyebrow fade-up">Compatibility</p>
+      <h2 class="section-title fade-up">Works with every classic iPod.</h2>
+      <p class="section-subtitle fade-up">
+        Named after the 30-pin connector that defined an era, ThirtyPin supports
+        every iPod generation &mdash; from the very first to the last.
+      </p>
+
+      <div class="device-categories fade-up">
+
+        <div class="device-category">
+          <h3>iPod Classic</h3>
+          <ul class="device-list">
+            <li class="device-item">iPod (1st Generation)</li>
+            <li class="device-item">iPod (2nd Generation)</li>
+            <li class="device-item">iPod (3rd Generation)</li>
+            <li class="device-item">iPod (4th Generation)</li>
+            <li class="device-item">iPod Photo (4th Gen Color)</li>
+            <li class="device-item">iPod Video (5th Generation)</li>
+            <li class="device-item">iPod Classic (6th Generation)</li>
+            <li class="device-item">iPod Classic (7th Generation)</li>
+            <li class="device-item">iPod mini</li>
+          </ul>
+        </div>
+
+        <div class="device-category">
+          <h3>iPod Nano</h3>
+          <ul class="device-list">
+            <li class="device-item">iPod Nano (1st Generation)</li>
+            <li class="device-item">iPod Nano (2nd Generation)</li>
+            <li class="device-item">iPod Nano (3rd Generation)</li>
+            <li class="device-item">iPod Nano (4th Generation)</li>
+            <li class="device-item">iPod Nano (5th Generation)</li>
+            <li class="device-item">iPod Nano (6th Generation)</li>
+            <li class="device-item">iPod Nano (7th Generation)</li>
+          </ul>
+        </div>
+
+        <div class="device-category">
+          <h3>iPod Shuffle</h3>
+          <ul class="device-list">
+            <li class="device-item">iPod Shuffle (1st Generation)</li>
+            <li class="device-item">iPod Shuffle (2nd Generation)</li>
+            <li class="device-item">iPod Shuffle (3rd Generation)</li>
+            <li class="device-item">iPod Shuffle (4th Generation)</li>
+          </ul>
+        </div>
+
+        <div class="device-category">
+          <h3>Supported Formats</h3>
+          <ul class="device-list">
+            <li class="device-item">MP3</li>
+            <li class="device-item">AAC / M4A</li>
+            <li class="device-item">ALAC (Classic &amp; Nano)</li>
+            <li class="device-item">WAV / AIFF</li>
+            <li class="device-item">Any format via FFmpeg transcoding</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOTIFY / DOWNLOAD ===== -->
+  <section id="download" class="cta-band">
+    <div class="container">
+      <p class="eyebrow" style="color:rgba(255,255,255,0.4);">Coming Soon</p>
+      <h2>Ready to bring your iPod back to life?</h2>
+      <p>
+        ThirtyPin is in active development. Leave your email and we&rsquo;ll
+        send you a single note when it&rsquo;s ready to download.
+      </p>
+      <a href="mailto:add@later.com?subject=ThirtyPin%20%E2%80%94%20Launch%20Notification&body=Hi%2C%0A%0APlease%20add%20me%20to%20the%20ThirtyPin%20launch%20notification%20list.%0A%0AThanks!" class="btn btn-amber">
+        Email Me When It&rsquo;s Ready
+      </a>
+      <p class="cta-note">One email when ThirtyPin launches. Nothing else.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Thirty<span class="logo-pin">Pin</span></a>
+        <p>A modern macOS app for syncing music to classic iPods. Named after the connector that defined an era.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#compatibility">Compatibility</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="changelog.html">Changelog</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+          <li><a href="docs.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#bug">Report a Bug</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2024 ThirtyPin. All rights reserved.</span>
+      <span>Built with care for iPod lovers everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

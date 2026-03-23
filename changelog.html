@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelog &mdash; ThirtyPin</title>
+  <meta name="description" content="ThirtyPin release history and version notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Thirty<span class="logo-pin">Pin</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#how-it-works">How It Works</a></li>
+      <li><a href="index.html#compatibility">Compatibility</a></li>
+      <li><a href="changelog.html">Changelog</a></li>
+      <li><a href="docs.html">Docs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="index.html#download" class="btn btn-primary nav-cta">Download</a>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav">
+  <a href="index.html#features">Features</a>
+  <a href="index.html#how-it-works">How It Works</a>
+  <a href="index.html#compatibility">Compatibility</a>
+  <a href="changelog.html">Changelog</a>
+  <a href="docs.html">Docs</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ===== PAGE HEADER ===== -->
+<header class="page-header">
+  <div class="container">
+    <p class="eyebrow">Changelog</p>
+    <h1>What&rsquo;s new in ThirtyPin</h1>
+    <p>A history of releases, fixes, and improvements. Older entries at the bottom.</p>
+  </div>
+</header>
+
+<!-- ===== CHANGELOG ===== -->
+<section class="changelog-page">
+  <div class="container">
+    <div class="changelog-timeline">
+
+      <!-- ── LATEST ENTRY ── -->
+      <div class="changelog-entry latest fade-up">
+        <div class="changelog-meta">
+          <span class="version-tag">v0.1.0</span>
+          <span class="changelog-date">Coming Soon</span>
+        </div>
+        <div class="changelog-content">
+          <span class="changelog-badge badge-beta">Beta</span>
+          <h2>First Public Release</h2>
+
+          <p class="changelog-section-label">New</p>
+          <ul class="changelog-list">
+            <li>Native macOS app built with SwiftUI, supporting macOS 13 Ventura and later.</li>
+            <li>Three-pane layout: sidebar, music library browser, device detail and sync controls.</li>
+            <li>Music library scanner that reads folder trees, metadata, embedded artwork, and folder-level art.</li>
+            <li>Sync planning &mdash; a full diff of source vs. device before any files move.</li>
+            <li>Two sync modes: <strong>Safe</strong> (only removes tracks ThirtyPin added) and <strong>Full Replace</strong>.</li>
+            <li>Automatic format transcoding via FFmpeg for incompatible audio formats.</li>
+            <li>Album artwork sync on all compatible iPod models.</li>
+            <li>Support for all iPod generations: Classic (1G&ndash;7G), Nano (1G&ndash;7G), Shuffle (1G&ndash;4G), mini.</li>
+            <li>Persistent selection memory per device &mdash; ThirtyPin remembers your choices across launches.</li>
+            <li>SQLite-backed settings, per-device track records, and conversion cache.</li>
+          </ul>
+
+          <p class="changelog-section-label" style="margin-top:20px;">Known Limitations</p>
+          <ul class="changelog-list">
+            <li>This is an early release. Some edge cases around artwork handling on older devices are still being ironed out.</li>
+            <li>iPod Touch and iPhone are not supported; ThirtyPin targets the 30-pin connector era.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ── PLACEHOLDER FOR FUTURE ENTRIES ── -->
+      <!--
+      <div class="changelog-entry fade-up">
+        <div class="changelog-meta">
+          <span class="version-tag">v0.2.0</span>
+          <span class="changelog-date">TBD</span>
+        </div>
+        <div class="changelog-content">
+          <span class="changelog-badge badge-new">New</span>
+          <h2>Release Title</h2>
+          <p class="changelog-section-label">New</p>
+          <ul class="changelog-list">
+            <li>New feature description.</li>
+          </ul>
+          <p class="changelog-section-label">Fixed</p>
+          <ul class="changelog-list">
+            <li>Bug fix description.</li>
+          </ul>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Thirty<span class="logo-pin">Pin</span></a>
+        <p>A modern macOS app for syncing music to classic iPods. Named after the connector that defined an era.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#compatibility">Compatibility</a></li>
+          <li><a href="index.html#download">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="changelog.html">Changelog</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+          <li><a href="docs.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#bug">Report a Bug</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 ThirtyPin. All rights reserved.</span>
+      <span>Built with care for iPod lovers everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

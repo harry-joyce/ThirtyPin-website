@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation &mdash; ThirtyPin</title>
+  <meta name="description" content="ThirtyPin documentation, FAQ, and guides for syncing music to classic iPods.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Thirty<span class="logo-pin">Pin</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#how-it-works">How It Works</a></li>
+      <li><a href="index.html#compatibility">Compatibility</a></li>
+      <li><a href="changelog.html">Changelog</a></li>
+      <li><a href="docs.html">Docs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="index.html#download" class="btn btn-primary nav-cta">Download</a>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav">
+  <a href="index.html#features">Features</a>
+  <a href="index.html#how-it-works">How It Works</a>
+  <a href="index.html#compatibility">Compatibility</a>
+  <a href="changelog.html">Changelog</a>
+  <a href="docs.html">Docs</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ===== PAGE HEADER ===== -->
+<header class="page-header">
+  <div class="container">
+    <p class="eyebrow">Documentation</p>
+    <h1>Docs &amp; FAQ</h1>
+    <p>Everything you need to know to get your music onto your iPod.</p>
+  </div>
+</header>
+
+<!-- ===== DOCS CONTENT ===== -->
+<section class="docs-page">
+  <div class="container">
+    <div class="docs-layout">
+
+      <!-- Sidebar navigation -->
+      <aside class="docs-sidebar">
+        <h4>On this page</h4>
+        <ul>
+          <li><a href="#getting-started">Getting Started</a></li>
+          <li><a href="#library">Your Music Library</a></li>
+          <li><a href="#sync">Syncing</a></li>
+          <li><a href="#transcoding">Transcoding</a></li>
+          <li><a href="#artwork">Artwork</a></li>
+          <li><a href="#safety">Safety &amp; Your Data</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <div class="docs-content">
+
+        <!-- Getting Started -->
+        <div id="getting-started" class="docs-section fade-up">
+          <h2>Getting Started</h2>
+
+          <details class="faq-item" open>
+            <summary>What is ThirtyPin?</summary>
+            <div class="faq-body">
+              <p>ThirtyPin is a native macOS app for syncing music to classic iPods. It connects directly to your iPod over USB and reads from any folder of music files on your Mac &mdash; no iTunes, no Music.app, no Apple ID required.</p>
+              <p>It is named after the 30-pin dock connector used on iPods from the original 2001 model through the iPod Classic 7th generation &mdash; the connector that defined a decade of portable music.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What do I need to run ThirtyPin?</summary>
+            <div class="faq-body">
+              <ul>
+                <li>A Mac running macOS 13 Ventura or later</li>
+                <li>A classic iPod (any generation) with a USB cable</li>
+                <li>A folder of music files on your Mac (any folder structure works)</li>
+                <li>FFmpeg installed (optional, required only for transcoding unsupported formats)</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I set up ThirtyPin for the first time?</summary>
+            <div class="faq-body">
+              <p>Open ThirtyPin and follow the three-step welcome guide:</p>
+              <ul>
+                <li><strong>Step 1:</strong> Open Settings and choose your music folder. ThirtyPin will scan it and build your library.</li>
+                <li><strong>Step 2:</strong> Connect your iPod with a USB cable. It will appear in the sidebar automatically.</li>
+                <li><strong>Step 3:</strong> Select your iPod, choose which music to sync, and review the plan before hitting Sync.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <!-- Library -->
+        <div id="library" class="docs-section fade-up">
+          <h2>Your Music Library</h2>
+
+          <details class="faq-item">
+            <summary>What folder structure does ThirtyPin expect?</summary>
+            <div class="faq-body">
+              <p>None in particular. ThirtyPin walks the entire folder tree you point it at and finds all audio files, regardless of how they are organized. Artist/album subfolders are common but not required.</p>
+              <p>Metadata (title, artist, album, track number) is read from the files themselves, so well-tagged files produce the best results.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What audio formats does ThirtyPin support?</summary>
+            <div class="faq-body">
+              <p>ThirtyPin can read any audio format that macOS supports for metadata. For syncing to your iPod:</p>
+              <ul>
+                <li><strong>MP3</strong> &mdash; supported on all iPods</li>
+                <li><strong>AAC / M4A</strong> &mdash; supported on all iPods</li>
+                <li><strong>ALAC</strong> &mdash; supported on iPod Classic and Nano (3G+)</li>
+                <li><strong>WAV / AIFF</strong> &mdash; supported on most iPods</li>
+                <li><strong>FLAC, Ogg, Opus, and others</strong> &mdash; automatically transcoded to AAC or MP3 via FFmpeg</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How does ThirtyPin handle artwork?</summary>
+            <div class="faq-body">
+              <p>ThirtyPin looks for album art in two places, in order of preference:</p>
+              <ul>
+                <li><strong>Embedded artwork</strong> in the audio file itself (ID3 tags, M4A atoms)</li>
+                <li><strong>Folder art</strong> &mdash; an image named <code>cover.jpg</code>, <code>folder.jpg</code>, <code>artwork.jpg</code>, or similar in the same folder as the tracks</li>
+              </ul>
+              <p>Artwork is scaled to the maximum dimension your iPod supports before being written to the device.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Syncing -->
+        <div id="sync" class="docs-section fade-up">
+          <h2>Syncing</h2>
+
+          <details class="faq-item">
+            <summary>What is a sync plan?</summary>
+            <div class="faq-body">
+              <p>Before ThirtyPin moves any files, it builds a complete plan showing exactly what will happen: which tracks will be added, which will be updated, and which will be removed. You can review this plan in full before committing.</p>
+              <p>The plan also shows a storage estimate &mdash; how many bytes will be added or freed &mdash; and warns you if the selection won&rsquo;t fit on your device.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What is the difference between Safe sync and Full Replace?</summary>
+            <div class="faq-body">
+              <p><strong>Safe (default):</strong> ThirtyPin only removes tracks it previously added. Tracks synced by iTunes, Music.app, or any other tool are left alone. This is the recommended mode.</p>
+              <p><strong>Full Replace:</strong> ThirtyPin treats the entire iPod as its own library and removes anything not in your current selection. Use this if you want ThirtyPin to be the sole manager of your device.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I choose specific artists or albums to sync?</summary>
+            <div class="faq-body">
+              <p>Yes. ThirtyPin supports two selection modes:</p>
+              <ul>
+                <li><strong>Entire Library:</strong> Everything in your music folder is synced to the iPod.</li>
+                <li><strong>Manual Selection:</strong> You pick which artists, albums, or individual tracks to include. Your selection is saved per device and remembered across launches.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Will ThirtyPin delete music I already have on my iPod?</summary>
+            <div class="faq-body">
+              <p>In <strong>Safe mode</strong>, no. ThirtyPin tracks exactly which tracks it has synced. It will only remove tracks it previously added, and only if they are no longer in your selection. Music synced by iTunes or Music.app is never touched.</p>
+              <p>In <strong>Full Replace mode</strong>, yes &mdash; tracks not in your current selection will be removed, regardless of their origin. You will see a full list of planned removals in the sync preview before anything happens.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Transcoding -->
+        <div id="transcoding" class="docs-section fade-up">
+          <h2>Transcoding</h2>
+
+          <details class="faq-item">
+            <summary>What is transcoding and when does it happen?</summary>
+            <div class="faq-body">
+              <p>Transcoding is the process of converting an audio file from one format to another. ThirtyPin transcodes files when:</p>
+              <ul>
+                <li>A track is in a format your iPod doesn&rsquo;t support (e.g., FLAC on an iPod Classic)</li>
+                <li>You&rsquo;ve enabled &ldquo;Transcode large supported files&rdquo; to save space</li>
+              </ul>
+              <p>ThirtyPin uses FFmpeg to handle transcoding. You can configure the target format (AAC or MP3) and bitrate in Settings.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does ThirtyPin cache transcoded files?</summary>
+            <div class="faq-body">
+              <p>Yes. By default, ThirtyPin keeps converted files in a cache so they don&rsquo;t need to be re-encoded on subsequent syncs. You can disable this in Settings if you&rsquo;d prefer to save disk space.</p>
+              <p>The cache is keyed on the source file&rsquo;s fingerprint and your transcoding settings, so changing bitrate or format will trigger a fresh transcode.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I need to install FFmpeg separately?</summary>
+            <div class="faq-body">
+              <p>ThirtyPin can use either a bundled FFmpeg binary or a system-installed one. If you install FFmpeg via Homebrew (<code>brew install ffmpeg</code>), ThirtyPin will find it automatically. A bundled copy may be included in future releases to remove this dependency.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Artwork -->
+        <div id="artwork" class="docs-section fade-up">
+          <h2>Artwork</h2>
+
+          <details class="faq-item">
+            <summary>Which iPods support album artwork?</summary>
+            <div class="faq-body">
+              <p>Artwork is supported on:</p>
+              <ul>
+                <li>iPod Photo (4th Gen Color) and later</li>
+                <li>iPod Video (5th Gen)</li>
+                <li>iPod Classic (6th &amp; 7th Gen)</li>
+                <li>iPod Nano (all generations)</li>
+              </ul>
+              <p>The original 1G&ndash;4G monochrome iPods, iPod mini, and iPod Shuffle do not have screens capable of displaying artwork.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What size should my album art be?</summary>
+            <div class="faq-body">
+              <p>ThirtyPin handles resizing automatically. Most classic iPods support artwork up to 320&times;320 pixels. ThirtyPin scales artwork down to the maximum your specific model supports before writing it to the device.</p>
+              <p>For best results, use square images of at least 300&times;300 pixels embedded directly in your audio files.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Safety -->
+        <div id="safety" class="docs-section fade-up">
+          <h2>Safety &amp; Your Data</h2>
+
+          <details class="faq-item">
+            <summary>Is ThirtyPin safe to use alongside iTunes or Music.app?</summary>
+            <div class="faq-body">
+              <p>Yes, in Safe mode. ThirtyPin records every track it adds and only removes those it added. Tracks synced by iTunes or Music.app are treated as &ldquo;unmanaged&rdquo; and are never touched automatically.</p>
+              <p>However, we recommend not running ThirtyPin and iTunes/Music.app concurrently on the same iPod, as both writing to the iPod database at the same time could cause issues.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Where does ThirtyPin store its data?</summary>
+            <div class="faq-body">
+              <p>ThirtyPin stores all its data in a single SQLite database at:</p>
+              <p><code>~/Library/Application Support/ThirtyPin/thirtypin.sqlite</code></p>
+              <p>This database contains your settings, per-device sync selections, track records (the source&harr;device mapping), and the conversion cache. Your music files are never modified.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I use ThirtyPin with multiple iPods?</summary>
+            <div class="faq-body">
+              <p>Yes. ThirtyPin maintains a completely separate sync selection and track record for each iPod, identified by the device&rsquo;s unique ID. Connect multiple iPods (one at a time) and ThirtyPin will keep their states separate.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="docs-section fade-up">
+          <h2>Frequently Asked Questions</h2>
+
+          <details class="faq-item">
+            <summary>Is ThirtyPin free?</summary>
+            <div class="faq-body">
+              <p>ThirtyPin&rsquo;s pricing model is still being determined. The project is open source and the initial release will be available at no cost. Check the <a href="changelog.html" style="color:var(--color-blue);">changelog</a> and sign up for the <a href="index.html#download" style="color:var(--color-blue);">launch notification</a> for updates.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does ThirtyPin require an internet connection?</summary>
+            <div class="faq-body">
+              <p>No. ThirtyPin works entirely offline. Your music stays on your Mac and your iPod. No data is sent anywhere.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does ThirtyPin support iPod Touch or iPhone?</summary>
+            <div class="faq-body">
+              <p>No. ThirtyPin is specifically designed for classic iPods &mdash; the ones that use the 30-pin connector or are based on the same iPod database format. iPod Touch and iPhone use a completely different protocol managed by Apple.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>My iPod isn&rsquo;t being detected. What should I do?</summary>
+            <div class="faq-body">
+              <p>Try the following:</p>
+              <ul>
+                <li>Make sure your iPod is unlocked (if it has a hold switch, ensure it&rsquo;s off)</li>
+                <li>Try a different USB cable or port</li>
+                <li>Restart your iPod by holding the Menu and Center button until the Apple logo appears</li>
+                <li>Check that the iPod mounts as a disk in Finder (ThirtyPin requires disk mode access)</li>
+              </ul>
+              <p>If problems persist, <a href="contact.html#bug" style="color:var(--color-blue);">report a bug</a> with details about your iPod model and macOS version.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I contribute to ThirtyPin?</summary>
+            <div class="faq-body">
+              <p>ThirtyPin is open source. The project is hosted on GitHub. Contributions, bug reports, and feature suggestions are welcome &mdash; head to the <a href="https://github.com" target="_blank" rel="noopener" style="color:var(--color-blue);">GitHub repository</a> to get involved.</p>
+            </div>
+          </details>
+
+        </div>
+
+      </div><!-- /docs-content -->
+    </div><!-- /docs-layout -->
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Thirty<span class="logo-pin">Pin</span></a>
+        <p>A modern macOS app for syncing music to classic iPods. Named after the connector that defined an era.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#compatibility">Compatibility</a></li>
+          <li><a href="index.html#download">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="changelog.html">Changelog</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+          <li><a href="docs.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#bug">Report a Bug</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 ThirtyPin. All rights reserved.</span>
+      <span>Built with care for iPod lovers everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
