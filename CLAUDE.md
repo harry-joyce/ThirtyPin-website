@@ -20,7 +20,7 @@ js/main.js       — Shared JS (mobile menu, scroll animations, form submissions
 
 ## Hosting
 
-Served from the root of the `main` branch via GitHub Pages. All paths are relative — no base URL config needed unless a custom domain is added.
+Served from the root of the `main` branch via GitHub Pages. Custom domain `thirtypin.app` is configured via the `CNAME` file. All paths are relative.
 
 ## Design system (defined in css/style.css `:root`)
 
